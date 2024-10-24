@@ -22,3 +22,9 @@ CREATE TABLE Docentes(
     Especialidad VARCHAR(80)
 );
 
+CREATE TABLE Asignaturas(
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50),
+    Descripción TEXT
+);
+
