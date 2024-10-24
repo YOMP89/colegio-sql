@@ -15,3 +15,10 @@ CREATE TABLE Estudiantes (
     Género VARCHAR(10)
 );
 
+CREATE TABLE Docentes(
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(50).
+    Apellido VARCHAR(50),
+    Especialidad VARCHAR(80)
+);
+
