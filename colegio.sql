@@ -28,3 +28,14 @@ CREATE TABLE Asignaturas(
     Descripción TEXT
 );
 
+-- Crear la tabla Notas
+CREATE TABLE Notas (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Estudiante_ID INT,
+    Asignatura_ID INT,
+    Docente_ID INT,
+    Nota DECIMAL(4, 2),
+    Fecha DATE,
+    FOREIGN KEY (Estudiante_ID) REFERENCES Estudiantes(ID),
+    FOREIGN KEY (Asignatura_ID) REFERENCES Asignaturas(ID),
+    FOREIGN KEY (Docente_ID) REFERENCES Docentes(ID)
